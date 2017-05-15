@@ -7,7 +7,7 @@ My ~~Bash~~ Zsh on Ubuntu on Windows configuration files. (See my arch linux con
 Just run `install.sh` to install zsh (including oh-my-zsh and other important stuff) and symlink all dotfiles.
 
 ```
-$ git clone https://github.com/jieverson/dotfiles-win.git ~/.dotfiles
+$ git clone https://github.com/DavidSchargel/dotfiles-win.git ~/.dotfiles
 $ ~/.dotfiles/install.sh
 ```
 

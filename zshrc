@@ -1,9 +1,21 @@
+# source nvm
+if [ -r ~/.nvm ]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+fi
+
+# source rbenv
+if [ -r ~/.rbenv/bin ]; then
+  export PATH=$HOME/.rbenv/bin:$PATH
+  eval "$(rbenv init -)"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.bin
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/jieverson/.oh-my-zsh
+  export ZSH=/home/david/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.

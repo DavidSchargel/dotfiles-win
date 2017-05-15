@@ -2,6 +2,18 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# source nvm
+if [ -r ~/.nvm ]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+fi
+
+# source rbenv
+if [ -r ~/.rbenv/bin ]; then
+  export PATH=$HOME/.rbenv/bin:$PATH
+  eval "$(rbenv init -)"
+fi
+
 # if running in terminal
 if test -t 1; then
 # ...start zsh

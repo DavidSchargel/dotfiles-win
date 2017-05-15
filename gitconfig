@@ -1,5 +1,13 @@
 [user]
-	email = jieverson@gmail.com
-	name = Jiéverson Maissiat
+	name = David Schargel
+	email = david@schargel.com
+
+[core]
+	excludesfile = '~/.gitignore'
+	editor = code.exe -w
+	autocrlf = input
+	symlinks = true
+	fileMode = false
+
 [push]
 	default = simple
